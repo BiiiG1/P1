@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>+</title>
+	<style type="text/css">
+		div.box1 div{
+			width:15px;
+			height:15px;
+			border-radius:3px;
+			margin:2px;
+			float:left;
+			-webkit-transition: all 1s;
+			   -moz-transition: all 1s;
+			    -ms-transition: all 1s;
+			     -o-transition: all 1s;
+			        transition: all 1s;
+		}
+		div.box2 div{
+			width:15px;
+			height:15px;
+			border-radius:3px;
+			margin:2px;
+			float: left;
+			-webkit-transition: all 1s;
+			   -moz-transition: all 1s;
+			    -ms-transition: all 1s;
+			     -o-transition: all 1s;
+			        transition: all 1s;
+		}
+		div.sv{
+			width:300px;
+			height: 650px;
+			border: 1px solid gray;
+			z-index:+1;
+		}
+		div.sh{
+			width:950px;
+			height: 195px;
+			border: 1px solid gray;
+		}
+	</style>
+</head>
+<body style="background-color:black;">
+	<div class="sh">
+		<div class="box1">
+			<script type="text/javascript">
+				var max=500;
+				for(i=0;i<max;i++){
+					document.write('<div></div>');
+				}
+				var divs = document.getElementsByClassName('box1').item(0).getElementsByTagName('div');
+				function Lamp(){
+					var r=Math.floor(Math.random()*max);
+					var c=Math.floor(Math.random()*360);
+					divs.item(r).style.backgroundColor = "hsl("+ c +" , 90% , 50%)";
+				}
+				setInterval(Lamp,10);
+			</script>
+		</div>
+	</div>
+	<div class="sv">
+		<div class="box1"></div>
+	</div>
+</body>
+</html>
