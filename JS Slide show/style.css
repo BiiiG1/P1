@@ -1,0 +1,76 @@
+div.oslide{
+	width:980px;
+	height:575px;
+	overflow:hidden;
+	margin-top:20px;
+	position:relative;
+	border:1px dashed gray;
+}
+div.container{
+	width:980px;
+	margin:0 auto;
+	padding-top:1px;
+}
+div.oslide div.scroll{
+	height:534px;
+	width:5000px;
+	position:absolute;
+	left:0;
+	top:0;
+	-webkit-transition-property:all;
+	-webkit-transition:1s;
+}
+div.oslide div.scroll > div{
+	width:980px;
+	height:inherit;
+	float:left;
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+div.oslide div.scroll > div.p1{
+	background-image:url('images/img1.jpg');
+}
+div.oslide div.scroll > div.p2{
+	background-image:url('images/img2.jpg');
+}
+div.oslide div.scroll > div.p3{
+	background-image:url('images/img3.jpg');
+}
+div.oslide div.scroll > div.p4{
+	background-image:url('images/img4.jpg');
+}
+div.oslide div.scroll > div.p5{
+	background-image:url('images/img5.jpg');
+}
+
+div.oslide ul.btn{
+	list-style-type:none;
+	margin-right:auto;
+	margin-left:auto;
+	width:200px;
+	height:16px;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+div.oslide ul.btn li{
+	float:left;
+	background-color:darkred;
+	width:30px;
+	height:10px;
+	-webkit-transition:all 1s;
+}
+div.oslide ul.btn li:hover,
+div.oslide ul.btn li.active{
+	height:22px;
+	margin-top:-6px;
+	background-color:red;
+	-webkit-transition: all3s;
+	   -moz-transition: all3s;
+	    -ms-transition: all3s;
+	     -o-transition: all3s;
+	        transition: all3s;
+}
+

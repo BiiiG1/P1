@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Game</title>
+	<style type="text/css">
+		#btn{
+			width:120px;
+			height: 100px;
+			color:red;
+			background-color:darkred;
+			font-size:15px;
+			position: absolute;
+			text-align: center;
+			left: 50%;
+			top:100%;
+			-webkit-transition: all 1s;
+			-moz-transition: all1s;
+			-ms-transition: all 1s;
+			-o-transition: all 1s;
+			transition: all 1s;
+			border-radius:10px;
+
+		}
+	</style>
+</head>
+<body id="body" style="background-color:darkgreen;">
+	<div id="btn">Click Me</div>
+	<script type="text/javascript">
+		var btn=document.getElementById('btn');
+		var body=document.getElementById('body');
+		btn.onmouseover= function (){
+			var h = Math.floor(Math.random()*360);
+			btn.style.left = (Math.random() * 90+'%');
+			btn.style.top = (Math.random() * 90+'%');
+			btn.style.backgroundColor="hsl(" + h + ", 90%, 50%)";
+			body.style.backgroundColor="hsl(" + h + ", 90%, 50%)";
+		};
+	</script>
+</body>
+</html>
