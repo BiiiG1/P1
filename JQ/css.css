@@ -1,0 +1,27 @@
+div.box{
+  height:500px;
+  width:950px;
+  background-color:darkred;
+  margin:auto auto;
+  border-radius:20px;
+  border:3px solid red;
+}
+div.box > div{
+  width:186px;
+  height:96px;
+  background-color:darkcyan;
+  float:left;
+  margin:1px 1px 1px 1px;
+  border:1px solid cyan;
+  border-radius:30px;
+}
+div.finish{
+  width:500px;
+  height:400px;
+  margin:auto auto;
+  font-size:50px;
+  color:orange;
+  font-family:arial;
+  font-weight:bold;
+  display:none;
+}
