@@ -1,3 +1,6 @@
+var nextslide1=function(){
+	$("div.slide").css('background','url(1.jpg)');
+};
 $("div.slide1p").click(function(){
 	$("div.slide").css('background','url(1.jpg)');
 });
@@ -13,4 +16,4 @@ $("div.slide4p").click(function(){
 $("div.slide5p").click(function(){
 	$("div.slide").css('background','url(5.jpg)');
 });
-
+setInterval(nextslide1,1000)
